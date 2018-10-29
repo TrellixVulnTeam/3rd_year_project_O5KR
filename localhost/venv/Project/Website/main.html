@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="fa\css\all.css">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container row" id="main-wrapper">
+
+		<div class="col-md-2" id="sidebar-wrapper">
+			<div id="sidebar">
+				<div class="container-fluid" id="logo-wrapper">
+					<img src="Images/logo.png" id="logo" ALT="logo">
+				</div>
+				<div class="sidebar-content-wrapper">
+					<ul>
+						<li id="top-wrapper">
+							<a class="sidebar-navbar-icons navbar-icons" id="top" href="#">
+								<i class="icons fas fa-home fa-md" id="top-icon"> </i>
+								<span class="sidebarTitles">Overview</span>
+							</a>
+						</li>
+						<li id="second-wrapper">
+							<a class="sidebar-navbar-icons navbar-icons" id="second" href="#">
+								<i class="icons fas fa-chart-pie fa-md" id="second-icon"></i>
+								<span class="sidebarTitles">Stats</span>
+							</a>
+							<!--<a href="#">Overview</a>-->
+						</li>
+						<li id="third-wrapper">
+							<a class="sidebar-navbar-icons navbar-icons" id="third" href="#">
+								<i class="icons fas fa-star fa-md" id="third-icon"></i>
+								<span class="sidebarTitles">Ratings</span>
+							</a>
+							<!--<a href="#">Overview</a>-->
+						</li>
+						<li id="last-wrapper">
+							<a class="sidebar-navbar-icons navbar-icons" id="last" href="#">
+								<i class=" icons fas fa-question" id="last-icon"></i>
+								<span class="sidebarTitles">About</span>
+							</a>
+							<!--<a href="#">Overview</a>-->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- LEGACY EXTEND SIDEBAR
+		<div id="sidebar-extend-wrapper">
+			<div id="title-container">
+				<a class="title-nav" id="top-nav" href="#">Overview</a>
+				<a class=" title-nav padded-nav" id="second-nav" href="#">Stats</a>
+				<a class=" title-nav padded-nav" id="third-nav" href="#">Ratings</a>
+				<a class=" title-nav padded-nav" id="last-nav" href="#">About</a>
+			</div>
+		</div>
+		-->
+      <div class="col-md-10" id="page-content-wrapper">
+        <div class="container-fluid">
+			<div class="container fluid" id="header">
+				<div class="header-info">
+					<h2 class="main-header-title">Overview</h2>
+				</div>
+			</div>
+        </div>
+		
+		<div class="container-fluid dashboard-content">
+			<div class="container-fluid team-select-content">
+				<div class="row">
+					<div class="col-md-4 team-wrappers team1-wrapper">
+						<img src="Images/TeamLogos/questionMark.png" class="teamLogos" id="team1Logo">
+						<span class="teamNames" id="team1-name">Chelsea</span>
+					</div>
+					<div class="col-md-4 vs-wrapper">
+						<img src="Images/TeamLogos/vs.png" class="teamLogos">
+						<form class="teamSelection" method="POST" action="/submitted">
+							<select class="teamForm" id="teamDropdownSelector" type="text" name="teamDropdown" placeholder="Select A Team">
+								<option value="" style="text-align = center" disabled selected>Select a game</option>
+							</select>
+							<input class="btn" type="submit" value="submit">
+						</form>
+					</div>
+					<div class="col-md-4 team-wrappers team2-wrapper">
+						<img src="Images/TeamLogos/questionMark.png" class="teamLogos" id="team2Logo">
+						<span class="teamNames" id="team2-name">Arsenal</span>
+						
+					</div>
+				</div>
+			</div>
+			<div id="team-section-header-wrapper">
+					<span id="team-section-header">Team Overview</span>
+				</div>
+			<div class="container-fluid team-overview">
+				<div class="row">
+					<div class="col-md-6 team-wrapper">
+					
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player1">Player1</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player2">P2</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player3">P3</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player4">p4</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player5">p5</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player6">p6</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player7">p7</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player8">p8</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player9">p9</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player10">p10</span>
+						</div>
+						
+						<div class="team1-player-wrapper">
+							<span class="team1" id="player11">p11</span>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player1">p1</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player2">p2</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player3">p3</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player4">p4</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player5">p5</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player6">p6</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player7">p7</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player8">p8</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player9">p9</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player10">p10</span>
+						</div>
+						<div class="team2-player-wrapper">
+							<span class="team2" id="player11">p11</span>
+						</div>
+					</div>
+				</div>
+			</div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
